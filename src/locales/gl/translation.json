@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "history": "Historia",
+    "objectives": "Obxectivos",
+    "location": "Localización",
+    "join": "Únete"
+  },
+  "header": {
+    "title": "Comunidade de Montes de Vilaxoán"
+  },
+  "presentation": {
+    "title": "Benvidos a Vilaxoán",
+    "text": "Vilaxoán é unha vila mariñeira galega cunha rica historia e unha comunidade unida."
+  },
+  "history": {
+    "title": "Historia",
+    "text": "Fundada en 1490 por Juan Mariño de Sotomayor, Vilaxoán foi sempre un referente mariñeiro en Galicia. En 1913, fusionouse con Vilagarcía e Carril, formando parte do municipio de Vilagarcía de Arousa. A tradición mariñeira e a innovación no cultivo do mexillón en bateas forman parte da súa identidade."
+  },
+  "objectives": {
+    "title": "Obxectivos",
+    "text": "A Comunidade de Montes de Vilaxoán traballa para a conservación do entorno natural, a promoción da cultura local e o benestar dos seus veciños."
+  },
+  "location": {
+    "title": "Localización",
+    "description": "Vilaxoán sitúase na provincia de Pontevedra, Galicia, á beira da Ría de Arousa, formando parte do concello de Vilagarcía de Arousa. É unha vila mariñeira con tradición e paisaxe costeira, situada na comarca do Salnés, no noroeste de España.",
+    "population": "Poboación: 6.823 habitantes (2024)",
+    "area": "Superficie: 5,9 km²",
+    "gentilicio": "Xentilicio: vilaxoanés",
+    "map": "Ver en Google Maps"
+  },
+  "images": {
+    "title": "Imaxes",
+    "text": "Galería de fotos de Vilaxoán e a súa contorna."
+  },
+  "join": {
+    "title": "Únete á comunidade",
+    "button": "Únete"
+  }
+}
