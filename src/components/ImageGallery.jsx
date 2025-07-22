@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const images = [
-  { src: "/imagenes/monte-lobeira.jpg", alt: "Monte Lobeira" },
-  { src: "/imagenes/vista-aerea.jpg", alt: "Vista aérea de Vilaxoán" },
+  { src: "/vilaxoan/imagenes/monte-lobeira.jpg", alt: "Monte Lobeira" },
+  { src: "/vilaxoan/imagenes/vista-aerea.jpg", alt: "Vista aérea de Vilaxoán" },
 ];
 
 function ImageGallery() {

@@ -4,7 +4,7 @@ import React from "react";
 import ImageGallery from "./components/ImageGallery";
 import FadeOnScroll from "./components/FadeOnScroll";
 
-const ESCUDO_URL = "/escudo-vilaxoan.png"; // Usar la misma imagen para header y footer
+const ESCUDO_URL = "/vilaxoan/escudo-vilaxoan.png"; // Usar la misma imagen para header y footer
 const MAPS_URL = "https://maps.app.goo.gl/G64HZ7yZG8odVSDc6";
 
 function App() {
@@ -17,10 +17,10 @@ function App() {
         <h1>{t("header.title")}</h1>
         <div className="lang-switcher">
           <button onClick={() => i18n.changeLanguage("es")} className="btn-espana">
-            <img src="/5353-espana.png" alt="Español" className="icon-espana" />
+            <img src="/vilaxoan/5353-espana.png" alt="Español" className="icon-espana" />
           </button>
           <button onClick={() => i18n.changeLanguage("gl")} className="btn-galicia">
-            <img src="/5353-galicia.png" alt="Gallego" className="icon-galicia" />
+            <img src="/vilaxoan/5353-galicia.png" alt="Gallego" className="icon-galicia" />
           </button>
         </div>
       </header>
@@ -77,7 +77,7 @@ function App() {
       </FadeOnScroll>
 
       <footer className="landing-footer">
-        <img src="/escudo-vilaxoan.png" alt="Escudo de Vilaxoán" className="escudo-footer" />
+        <img src="/vilaxoan/escudo-vilaxoan.png" alt="Escudo de Vilaxoán" className="escudo-footer" />
         <p>© Comunidad de Montes de Vilaxoán</p>
       </footer>
     </div>
