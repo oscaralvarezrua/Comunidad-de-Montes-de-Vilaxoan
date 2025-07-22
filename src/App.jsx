@@ -1,13 +1,14 @@
 import { useTranslation } from "react-i18next";
 import "./App.css";
+import React from "react";
+import ImageGallery from "./components/ImageGallery";
+import FadeOnScroll from "./components/FadeOnScroll";
 
 const ESCUDO_URL = "/escudo-vilaxoan.png"; // Usar la misma imagen para header y footer
 const MAPS_URL = "https://maps.app.goo.gl/G64HZ7yZG8odVSDc6";
 
 function App() {
   const { t, i18n } = useTranslation();
-
-  // Eliminar la función scrollToSection porque ya no se usa
 
   return (
     <div className="landing-container">
@@ -24,44 +25,56 @@ function App() {
         </div>
       </header>
 
-      <section id="presentation" className="section">
-        <h2>{t("presentation.title")}</h2>
-        <p>{t("presentation.text")}</p>
-      </section>
+      <FadeOnScroll>
+        <section id="presentation" className="section">
+          <h2>{t("presentation.title")}</h2>
+          <p>{t("presentation.text")}</p>
+        </section>
+      </FadeOnScroll>
 
-      <section id="history" className="section">
-        <h2>{t("history.title")}</h2>
-        <p>{t("history.text")}</p>
-      </section>
+      <FadeOnScroll>
+        <section id="history" className="section">
+          <h2>{t("history.title")}</h2>
+          <p>{t("history.text")}</p>
+        </section>
+      </FadeOnScroll>
 
-      <section id="objectives" className="section">
-        <h2>{t("objectives.title")}</h2>
-        <p>{t("objectives.text")}</p>
-      </section>
+      <FadeOnScroll>
+        <section id="objectives" className="section">
+          <h2>{t("objectives.title")}</h2>
+          <p>{t("objectives.text")}</p>
+        </section>
+      </FadeOnScroll>
 
-      <section id="images" className="section images-section">
-        <h2>{t("images.title")}</h2>
-        <p>{t("images.text")}</p>
-      </section>
+      <FadeOnScroll>
+        <section id="images" className="section images-section">
+          <h2>{t("images.title")}</h2>
+          <ImageGallery />
+        </section>
+      </FadeOnScroll>
 
-      <section id="location" className="section location-section">
-        <h2>{t("location.title")}</h2>
-        <img src={ESCUDO_URL} alt="Escudo" className="escudo-large" />
-        <p>{t("location.description")}</p>
-        <ul>
-          <li>{t("location.population")}</li>
-          <li>{t("location.area")}</li>
-          <li>{t("location.gentilicio")}</li>
-        </ul>
-        <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="maps-link">
-          {t("location.map")}
-        </a>
-      </section>
+      <FadeOnScroll>
+        <section id="location" className="section location-section">
+          <h2>{t("location.title")}</h2>
+          <img src={ESCUDO_URL} alt="Escudo" className="escudo-large" />
+          <p>{t("location.description")}</p>
+          <ul>
+            <li>{t("location.population")}</li>
+            <li>{t("location.area")}</li>
+            <li>{t("location.gentilicio")}</li>
+          </ul>
+          <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="maps-link">
+            {t("location.map")}
+          </a>
+        </section>
+      </FadeOnScroll>
 
-      <section id="join" className="section join-section">
-        <h2>{t("join.title")}</h2>
-        <button className="join-btn">{t("join.button")}</button>
-      </section>
+      <FadeOnScroll>
+        <section id="join" className="section join-section">
+          <h2>{t("join.title")}</h2>
+          <button className="join-btn">{t("join.button")}</button>
+        </section>
+      </FadeOnScroll>
 
       <footer className="landing-footer">
         <img src="/escudo-vilaxoan.png" alt="Escudo de Vilaxoán" className="escudo-footer" />
